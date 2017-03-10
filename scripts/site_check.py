@@ -57,5 +57,5 @@ def test(url, trustedURLs):
     else:
         send_email(url)
 
-
-test(url, trustURL)
+if __name__='__main__':
+    test(url, trustURL)
