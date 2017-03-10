@@ -2,7 +2,7 @@
 import urllib.request
 import smtplib
 
-url='http://betas.su'
+url='http://SITE_NAME.HERE'
 trustURL = ('http://www.ya.ru', 'http://www.google.com', 'http://www.mail.ru')
 
 
@@ -11,9 +11,9 @@ def send_email(url):
     Send email function
     """
     mail_server = smtplib.SMTP('smtp.gmail.com', 587)
-    sender = '3038686@gmail.com'
+    sender = 'YOUR_EMAIL@gmail.com'
     password = ''
-    my_emai = '3038686@gmail.com'
+    my_emai = 'YOUR_EMAIL@gmail.com'
     message = 'The web-site {} is DOWN!!!'.format(url)
     subj = 'The web-site {} is DOWN!!!'.format(url)
     msg = "Subject: {}\n\n{}".format(subj, message)
